@@ -7,11 +7,8 @@ const el = document.getElementById('root')
 const root = ReactDOM.createRoot(el);
 // 4) Create a component
 function App() {
-
-    const message = true; //React is not going to show true in screen
-    const element = {color:red}
      
-    return <h1>{element}</h1> //React will throw error in console because it cant show an object as text
+    return <h1>{new Date().toLocaleDateString()}</h1> 
 }
 // 5) Show the component on the screen
 root.render(<App/>)
