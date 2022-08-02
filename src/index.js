@@ -8,12 +8,10 @@ const root = ReactDOM.createRoot(el);
 // 4) Create a component
 function App() {
 
-    let message = 'By there!'
-    if(Math.random()>0.5){
-        message = 'Hello there'
-    }
+    const message = true; //React is not going to show true in screen
+    const element = {color:red}
      
-    return <h1>{message}</h1>
+    return <h1>{element}</h1> //React will throw error in console because it cant show an object as text
 }
 // 5) Show the component on the screen
 root.render(<App/>)
