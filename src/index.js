@@ -8,10 +8,17 @@ const root = ReactDOM.createRoot(el);
 // 4) Create a component
 function App() {
     //Props Customizes the element
-    const inputType = "number";
-    const minValue = 5;
-    const maxValue = 10;
-    return <input type={inputType} min={minValue} max={maxValue} />;
+    const message = "Enter age: "
+    return (
+        <input 
+            type="number" 
+            min={5} 
+            max={10} 
+            list={[1,2,3]}  //Wrap with curly braces
+            style={{color:'red',border:'3px solid green'}} //Wrap with curly braces
+            alt={message} //Wrap with curly braces
+        />
+    ); 
 }
 // 5) Show the component on the screen
 root.render(<App/>)
